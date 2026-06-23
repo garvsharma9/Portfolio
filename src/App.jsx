@@ -352,6 +352,7 @@ export default function App() {
                 tech: ["React.js", "Spring Boot", "MongoDB Atlas", "Llama 3.2"],
                 icon: "fa-magnifying-glass",
                 image: "/youtube_search.jpg",
+                github: "https://github.com/garvsharma9/yt-dlp",
                 featured: true
               },
               {
@@ -360,6 +361,7 @@ export default function App() {
                 tech: ["React", "Spring Boot", "MongoDB", "Docker", "OAuth"],
                 icon: "fa-users",
                 image: "/team_finder.jpg",
+                github: "https://github.com/garvsharma9/TeamFinder",
                 featured: true
               },
               {
@@ -368,6 +370,7 @@ export default function App() {
                 tech: ["Flutter", "Spring Boot", "MongoDB", "Railway"],
                 icon: "fa-link",
                 image: "/link_shortener.jpg",
+                github: "https://github.com/garvsharma9",
                 featured: false
               },
               {
@@ -376,6 +379,7 @@ export default function App() {
                 tech: ["C++", "ESP-32", "IoT", "Wi-Fi"],
                 icon: "fa-lock",
                 image: "/smart_lock.jpg",
+                github: "https://github.com/garvsharma9/Excalibur",
                 featured: false
               }
             ].map((proj, i) => (
@@ -415,7 +419,7 @@ export default function App() {
                       ))}
                     </div>
                     
-                    <a href="#" className="inline-flex items-center gap-2 bg-white text-dark-900 hover:bg-accent-cyan hover:text-white px-5 py-2.5 rounded-full font-bold text-sm transition-colors">
+                    <a href={proj.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white text-dark-900 hover:bg-accent-cyan hover:text-white px-5 py-2.5 rounded-full font-bold text-sm transition-colors">
                       <i className="fa-brands fa-github text-lg"></i> View Repository
                     </a>
                   </div>
